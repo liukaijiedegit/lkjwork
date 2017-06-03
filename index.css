@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    position: relative;
+    opacity: 1;
+    /*background: -webkit-linear-gradient(-45deg, #fff, #FF0000);*/
+    background-color: #e95f2b;
+    transition: all 1s linear;
+}
+
+.crile {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -webkit-animation: crile 1s linear 0s both;
+    -o-animation: crile 1s linear 0s both;
+    animation: crile 1s linear 0s both;
+}
+
+.content {
+    background-color: #000088;
+    position: relative;
+    opacity: 0;
+    display: none;
+    color: #4fc3ba;
+    transition: all 1s linear;
+    font-size: 100px;
+    text-align: center;
+}
+
+@keyframes crile {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
